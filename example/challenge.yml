@@ -1,4 +1,4 @@
-contract: challenge     # The contract name of the challenge contract
+contract: Challenge     # The contract name of the challenge contract
 
 description: |
   Can you emit the SendFlag event ?

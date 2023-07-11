@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.12;
 
-contract challenge {
+contract Challenge {
     mapping(address => bool) public success;
     mapping(address => bool) public betted;
     mapping(address => uint) public win_counts;
