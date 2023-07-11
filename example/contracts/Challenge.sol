@@ -8,6 +8,8 @@ contract challenge {
     mapping(address => uint) public win_counts;
     event SendFlag(address);
 
+    constructor () {}
+
     function bet(bytes32 guess) public payable {
         require(! betted[msg.sender], "You have already tried this before.");
         bytes32 answer = keccak256(abi.encodePacked(blockhash(block.number), block.timestamp));
