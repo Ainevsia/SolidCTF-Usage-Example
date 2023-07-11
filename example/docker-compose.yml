@@ -2,6 +2,7 @@ version: "3"
 services:
   challenge:
     image: chainflag/solidctf:1.0.0
+    build: ..
     restart: unless-stopped
     ports:
       - "20000:20000"
